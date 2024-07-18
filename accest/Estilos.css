@@ -63,6 +63,7 @@ h1 {
     color: white;
     cursor: pointer;
     border-radius: 4px;
+
 }
 
 .search-container select {
@@ -82,16 +83,10 @@ h1 {
 #close-btn:hover{
     background-color:#DCD3C5;
 }
-.titulo{
-    width: 60%;
-    margin:auto;
-    background-image: url('../img/255469.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.1; /* Ajusta la opacidad para hacerla más tenue */
-    border: 1px solid gray;
-    background-color: rgb(234, 243, 243);
-}
+
+
+
+
 
 
 @media (max-width: 680px) {
@@ -102,7 +97,7 @@ h1 {
     #close-btn {
         display: none;
     }
+    
 }
-
 
 
