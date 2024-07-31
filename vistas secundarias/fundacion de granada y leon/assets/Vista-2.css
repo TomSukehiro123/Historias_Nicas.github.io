@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* Encabezado*/
+#main {
+    background-color: rgb(96, 78, 55);
+}
+
+.container {
+    max-width: 1200px;
+    padding: 16px;
+    margin: auto;
+   overflow: hidden;
+}
+
+h2 {
+    font-family: "kanit";
+    font-size: 2rem; 
+    margin: 0 20px;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem; 
+        margin: 0 px;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+
+
+.nav-list a {
+    color: black;
+    text-decoration: none;
+    padding: 2px 15px; 
+    border-radius: 20px;
+    font-family: "kanit";
+    font-size: 18px; 
+    white-space: nowrap; 
+}
+
+
+.logo {
+    height: 70px;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Estilos para el botón hamburguesa */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: rgb(96, 78, 55); 
+    border: none;
+    padding: 10px; 
+    border-radius: 5px;
+}
+
+.bar {
+    background-color: black;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    border-radius: 5px;
+}
+
+/* Estilos en pantallas pequeñas */
+@media (max-width: 950px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px; 
+        right: 0;
+        background-color: rgb(96, 78, 55);
+        max-width: 250px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000; 
+        border-radius: 9px;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    
+    }
+
+    .nav-list a {
+        color: black;
+        text-decoration: none;
+        padding: 2px 15px;
+        border-radius: 30px;
+        font-family: "kanit";
+        font-size: 18px;
+    }
+
+    .nav-list a:hover {
+        background-color: #000;
+        color: #fff;
+    }
+
+    .nav-list a:last-child {
+        border-bottom: none;
+    }
+}
+
+
+body {
+    background-color: rgba(220, 211, 211, 0.947);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+.contenedor-padre {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    font-size: 21px;
+}
+
+.section,.section2 {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 27px
+}
+/*el seccion 2 es para el margin nada mas  ya que comparten todo con el primer section*/
+.Imagen1,.Imagen4,.Imagen2,.Imagen3,.Imagen5{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    border-radius: 5px;
+   
+}
+
+.Imagen1{
+    width: 262px;
+    height:262px;
+    box-shadow: 0 0 5px rgba(37, 11, 1, 0.76);
+    padding:2px;
+    
+    
+}
+
+.Imagen2{
+    width: 459px;
+    height:290px;
+    box-shadow: 0 0 5px rgba(39, 73, 136, 0.979);
+    
+
+}
+.Imagen3,.Imagen4{
+    width: 389px;
+    height:250px;
+    box-shadow: 0 0 5px rgba(27, 55, 145, 0.76);
+    
+}
+.Imagen5{
+    box-shadow: 0 0 7px  #f0f0f0;;
+}
+
+.footer {
+    background-color: rgb(120, 113, 113);
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    
+}
+
+.footer h2 {
+    color: white;
+    font-size: 16px; 
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.footer p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px; 
+    margin-top: 10px; 
+}
+
+.redes-sociales {
+    text-align: center;
+    padding: 0;
+    list-style-type: none; 
+    margin: 0;
+}
+
+.redes-sociales li {
+    display: inline-block;
+    margin: 0 10px; 
+}
+
+.redes-sociales a {
+    display: inline-block; 
+}
+
+.redes-sociales img {
+    transition: transform 0.3s ease; 
+}
+
+.redes-sociales a:hover img {
+    transform: scale(1.1); 
+}

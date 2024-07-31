@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./accest/normalize.css">
     <link rel="stylesheet" href="./accest/Estilos.css">
     <link rel="stylesheet" href="./accest/contenido.css">
     <link rel="stylesheet" href="./accest/footer.css">
@@ -18,98 +19,108 @@
                 <h1 id="title">Historias Nicaraguenses</h1>
             </div>
             <div class="search-container">
-                <input type="text" id="entrada" placeholder="Buscar...">
+                <input type="text" id="entrada" placeholder="Buscar..." autocapitalize="off">
                 <button id="search-btn"><img src="./img/buscar.png" style="width: 12px; height: 13px;" alt="B"></button>
                 <button id="close-btn"><img src="./img/x.png" style="width: 12px; height: 13px;" alt="X"></button>
+                <button id="restablecer" class="rest"><img src="./img/actualizar.png" alt="reset" style="width: 17px; height: 17px;" ></button>
                 <select name="filtro" id="filtro">
-                    <option value="">Todos</option>
-                    <option value="">Filtrar</option>
-                    <option value="">Filtrar</option>
-                    <option value="">Filtrar</option>
-                    <option value="">Filtrar</option>
-                    <option value="">Filtrar</option>
+                    
+                    <option >Todos</option>
+                    <option >1524</option>
+                    <option >1821</option>
+                    <option >1856</option>
+                    <option >1934</option>
+                    <option >1979</option>
+                    <option >1980</option>
+                    <option >1998</option>
                 </select>
             </div>
         </nav>
     </header>
     <hr>
+    <div id="auto_cpt" class="autocompletado_C"></div>
     <main class="padre">
-    <div class="titulo">
-        <h1>Bienvenido a nuestro sitio web de historias Nicaraguenses</h1>
-<p> Lorem ipsum dolor, sit amet consectetur saepe excepturi fuga delectus assumenda fugit
-     dolores facere, voluptatem error suscipit repellendus aliquid, provident reiciendis, distinctio natus?</p>
-    </div>
+        <div class="titulo">
+            <h1>Bienvenido a nuestro sitio web de historias Nicaraguenses</h1>
+            <p>A continuacion te brindamos una serie de historias que acontecieron en Nicaragua y que posteriormente dejaron una profunda huella en la brecha historica nicaraguese, esperamos que sea de tu agrado :3 </p>
+        </div>
+        <section class="contenedor">
+       
+            <div class="contenido" name="Fundacion de las ciudades de Granada y Leon" data-fecha="1524">
+                <button class="btn-desplegar">Fundacion de las ciudades de Granada y Leon</button>
+                <div class="panel">
+                    <p><a href="./vistas secundarias/fundacion de granada y leon/index.html">Historia de la fundacion de granada y leon</a></p>
+                </div>
+            </div>
+            <div class="contenido" name="Independencia de Nicaragua" data-fecha="1821">
+                <button class="btn-desplegar">Independencia de Nicaragua</button>
+                <div class="panel">
+                    <p><a href="./vistas secundarias/Independencia de nicaragua/Indep.html">Historia de la independencia de Nicaragua</a></p>
+                </div>
+            </div>
+            <div class="contenido" name="Batalla de San Jacinto" data-fecha="1856">
+                <button class="btn-desplegar">Batalla de San Jacinto</button>
+                <div class="panel">
+                    <p><a href="./vistas secundarias/batalla de san jacinto/batalla de san jacinto.html">Hitoria de la batalla de san jacinto</a></p>
+                </div>
+            </div>
+            <div class="contenido" name = "Asesinato de Sandino" data-fecha="1934">
+                <button class="btn-desplegar">Asesinato de Sandino</button>
+                <div class="panel">
+                    <p><a href="./vistas secundarias/Muerte de sandino/muerte de sandino.html">Historia del asesinato de sandino</a></p>
+                </div>
+            </div>
+            <div class="contenido" name = "Fin de la Dictadura Somocista" data-fecha="1979">
+                <button class="btn-desplegar">Fin de la Dictadura Somocista</button>
+                <div class="panel">
+                    <p><a href="./vistas secundarias/Dictadura Somocista/Dics.html">Historia del fin de la Dictadura somosista</a></p>
+                </div>
+            </div>
+            <div class="contenido" name = "Revolucion Sandinista" data-fecha="1980">
+                <button class="btn-desplegar">Revolucion Sandinista</button>
+                <div class="panel">
+                    <p><a href="./vistas secundarias/revolucion sandinista final/Rev.html">Historia de la revolucion sandinista</a></p>
+                </div>
+            </div>
+            <div class="contenido" name = "Huracan Mitch en Nicaragua" data-fecha="1998">
+                <button class="btn-desplegar">Huracan Mitch en Nicaragua</button>
+                <div class="panel">
+                    <p><a href="./vistas secundarias/huracan mitch/index.html">Historia del huracan mitch</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
   
-    <section class="contenedor">
-        <div class="contenido">
-            <button class="btn-desplegar">Personajes destacados de Nicaragua</button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
-            </div>
-        <div class="contenido">
-            <button class="btn-desplegar">Fundacion de las ciudades de Granada y Leon</button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
-            </div>
 
-        </div>
-        <div class="contenido">
-            <button class="btn-desplegar">Independencia de Nicaragua</button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
-            </div>
-        </div>
-        <div class="contenido">
-            <button class="btn-desplegar">Batalla de San Jacinto</button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
-            </div>
-        </div>
-        <div class="contenido">
-            <button class="btn-desplegar">Asesinato de Sandino</button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
-            </div>
-        </div>
-        <div class="contenido">
-            <button class="btn-desplegar">Fin de la Dictadura Somocista</button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
-            </div>
-        </div>
-        <div class="contenido">
-            <button class="btn-desplegar">Revolucion Sandinista</button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
-            </div>
-        </div>
-        <div class="contenido">
-            <button class="btn-desplegar">Huracan Mitch en Nicaragua</button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adip</p>
-            </div>
-        </div>
-        
-        </div>
-    </section>
-  </main>
 
-  <footer class="footer">
-    <h2>Contactanos y síguenos en</h2>
-    <div class="redes">
-        <UL class="redes-sociales">
-            <li><a href="" target="blank"> <img
-                        src="./img/facebook.png" height="45" width="45"></a></li>
-            <li><a href="" target="blank"> <img src="./img/instagram.png"
-                        height="45" width="45"></a></li>
-            <li><a href="" target="blank">
-                    <img src="./img/twitter.png" height="45" width="45"></a></li>
-            <li><a href="" target="blank"> <img
-                        src="./img/whatsapp.png" height="45" width="45"></a></li>
-        </UL>
-    </div>
-    <p>Copyright © 2024 <b>Hechos Historicos Nicaragüenses</b> - Todos los derechos reservados</p>
-</footer>
+    <footer class="footer">
+        <h2>Contáctanos y síguenos en</h2>
+        <div class="redes">
+            <ul class="redes-sociales">
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=61563047222875&mibextid=ZbWKwL" target="_blank">
+                        <img src="./img/facebook.png" height="45" width="45" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/ingenieria_est?igsh=YmswY3J6ZDN1b3Js" target="_blank">
+                        <img src="./img/instagram.png" height="45" width="45" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/UdemEst" target="_blank">
+                        <img src="./img/twitter.png" height="45" width="45" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://chat.whatsapp.com/FD2yzn0YUXuLphDKsV7U86" target="_blank">
+                        <img src="./img/whatsapp.png" height="45" width="45" alt="WhatsApp">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>Copyright © 2024 <b>Historias Nicaragüenses</b> - Todos los derechos reservados</p>
+    </footer>
 
 
     

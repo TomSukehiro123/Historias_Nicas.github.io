@@ -1,7 +1,8 @@
 .padre{
+    margin-top: 500px;
     width: 800px;
     margin: 20px auto;
-    margin-bottom: 40px;
+    
 }
 .titulo {
     position: relative;
