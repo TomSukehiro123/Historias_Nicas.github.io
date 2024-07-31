@@ -117,9 +117,9 @@ body {
 }
 
 .contenedor-padre {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
+    width: 800px;
+    margin: 20px auto;
+    
 }
 
 h1, h2 {
@@ -138,7 +138,7 @@ p {
     background-color: #f0f0f0;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin: 27px;
+    
 }
 
 .Imagen1, .Imagen2, .Imagen3, .Imagen4, .Imagen5 {
@@ -195,4 +195,13 @@ p {
 
 .redes-sociales a:hover img {
     transform: scale(1.1); 
+}
+@media  (max-width: 800px) {
+    .contenedor-padre {
+      width: 100%; /* Ancho completo en pantallas pequeñas */
+      
+      
+    }
+ 
+
 }
