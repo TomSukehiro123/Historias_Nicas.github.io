@@ -185,14 +185,42 @@ th, td {
     padding: 8px;
 }
 
-@media (max-width: 500px) {
-    table {
-        display: none;
-    }
-}
+
 .imgP1,.img2{
     width: 380px;
     height: 309px;
+}
+
+
+/* Estilos para tablas */
+.table-container {
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    -webkit-overflow-scrolling: touch; /* Suaviza el desplazamiento en dispositivos táctiles */
+}
+
+table {
+    border-radius: 7px;
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    display: block; /* Hace que la tabla sea un bloque para el desplazamiento */
+}
+
+th, td {
+    border: 1px solid #1d1818;
+    padding: 8px;
+    text-align: left; /* Asegura un buen formato de texto */
+}
+
+@media (max-width: 500px) {
+    .section {
+        padding: 5px;
+    }
+
+    th, td {
+        font-size: 12px; /* Ajusta el tamaño del texto para dispositivos pequeños */
+        padding: 4px;
+    }
 }
 
 
