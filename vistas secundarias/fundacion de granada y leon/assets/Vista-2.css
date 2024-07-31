@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-/* Encabezado*/
+/* Encabezado */
 #main {
     background-color: rgb(96, 78, 55);
 }
@@ -9,11 +9,11 @@
     max-width: 1200px;
     padding: 16px;
     margin: auto;
-   overflow: hidden;
+    overflow: hidden;
 }
 
 h2 {
-    font-family: "kanit";
+    font-family: "Kanit", sans-serif;
     font-size: 2rem; 
     margin: 0 20px;
 }
@@ -21,7 +21,7 @@ h2 {
 @media (max-width: 768px) {
     h2 {
         font-size: 1.5rem; 
-        margin: 0 px;
+        margin: 0;
     }
 }
 
@@ -37,18 +37,15 @@ nav {
     gap: 30px;
 }
 
-
-
 .nav-list a {
     color: black;
     text-decoration: none;
     padding: 2px 15px; 
     border-radius: 20px;
-    font-family: "kanit";
+    font-family: "Kanit", sans-serif;
     font-size: 18px; 
     white-space: nowrap; 
 }
-
 
 .logo {
     height: 70px;
@@ -60,7 +57,6 @@ nav a:hover {
     color: #fff;
 }
 
-/* Estilos para el botón hamburguesa */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -79,13 +75,12 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* Estilos en pantallas pequeñas */
 @media (max-width: 950px) {
     .nav-list {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 100px; 
+        top: 70px; 
         right: 0;
         background-color: rgb(96, 78, 55);
         max-width: 250px;
@@ -100,36 +95,29 @@ nav a:hover {
 
     .hamburger {
         display: flex;
-    
     }
 
     .nav-list a {
         color: black;
-        text-decoration: none;
-        padding: 2px 15px;
+        padding: 10px 15px;
         border-radius: 30px;
-        font-family: "kanit";
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .nav-list a:hover {
         background-color: #000;
         color: #fff;
     }
-
-    .nav-list a:last-child {
-        border-bottom: none;
-    }
 }
-
 
 body {
     background-color: rgba(220, 211, 211, 0.947);
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
+
 .contenedor-padre {
-    max-width: 1500px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
 }
@@ -141,50 +129,25 @@ h1, h2 {
 
 p {
     text-align: justify;
-    font-size: 21px;
+    font-size: 18px;
 }
 
-.section,.section2 {
+.section{
     margin-bottom: 30px;
     padding: 15px;
     background-color: #f0f0f0;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin: 27px
+    margin: 27px;
 }
-/*el seccion 2 es para el margin nada mas  ya que comparten todo con el primer section*/
-.Imagen1,.Imagen4,.Imagen2,.Imagen3,.Imagen5{
+
+.Imagen1, .Imagen2, .Imagen3, .Imagen4, .Imagen5 {
     display: block;
     margin: auto;
     max-width: 100%;
+    height: auto;
     border-radius: 5px;
-   
-}
-
-.Imagen1{
-    width: 262px;
-    height:262px;
-    box-shadow: 0 0 5px rgba(37, 11, 1, 0.76);
-    padding:2px;
-    
-    
-}
-
-.Imagen2{
-    width: 459px;
-    height:290px;
-    box-shadow: 0 0 5px rgba(39, 73, 136, 0.979);
-    
-
-}
-.Imagen3,.Imagen4{
-    width: 389px;
-    height:250px;
-    box-shadow: 0 0 5px rgba(27, 55, 145, 0.76);
-    
-}
-.Imagen5{
-    box-shadow: 0 0 7px  #f0f0f0;;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .footer {
@@ -194,7 +157,6 @@ p {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13px;
-    
 }
 
 .footer h2 {
