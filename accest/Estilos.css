@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@400;500;600;700;800&display=swap');
 :root {
     --color-principal: #EAEDED;
     --color-navbar: #fff;
 }
 *{
-    font-family: "Quicksand", sans-serif;
+    font-family: "kanit", sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -27,6 +29,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
+    font-size: 1rem;
 }
 
 .logo {
@@ -35,13 +38,15 @@ body {
 }
 
 #logo-img {
-    height: 50px;
+    height: 55px;
     margin-right: 10px;
+    border-radius: 10px;
 }
 
 .logo h1{
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
+
 
 .search-container {
     display: flex;
@@ -136,3 +141,21 @@ body {
 }
 
 
+@media (max-width: 768px) {
+   
+
+    .logo h1 {
+        font-size: 1rem; /* Ajuste en tamaño de fuente del título */
+    }
+
+}
+
+@media (max-width: 480px) {
+   
+
+    .logo h1 {
+        font-size: 0.9rem; /* Ajuste en tamaño de fuente del título */
+    }
+
+    
+}
