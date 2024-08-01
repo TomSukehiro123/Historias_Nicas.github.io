@@ -9,7 +9,7 @@
 
 /* Encabezado*/
 #main {
-    background-color: rgb(196,76,24);
+    background-color: rgb(255, 251, 246);
 }
 
 .container {
@@ -42,7 +42,6 @@ nav {
     display: flex;
     list-style: none;
     gap: 30px;
-    
 }
 
 
@@ -73,7 +72,7 @@ nav a:hover {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    background-color: rgb(196,76,24); 
+    background-color: rgb(96, 78, 55); 
     border: none;
     padding: 10px; 
     border-radius: 5px;
@@ -98,7 +97,7 @@ li{
         position: absolute;
         top: 100px; 
         right: 0;
-        background-color: rgb(196,76,24);
+        background-color: rgb(255, 251, 246);
         max-width: 250px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         z-index: 1000; 
