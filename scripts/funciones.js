@@ -18,62 +18,7 @@ function aparecerBarra() {
             closeBtn.style.display = 'block';
         };
         
-       //#region (Buscador).
-var opc_buscada;//Creamos la variable opc_buscada, esta almacena la opcion seleccionada del autocompletado. 
-document.getElementById("search-btn").addEventListener("click",guardar);//Al hacer click en el boton buscar ejecutamos la funcion guardar.
-document.getElementById("restablecer").addEventListener('click',Restableser_cont);//Al hacer click en el boton restablecer se ejecutara la funcion Restableser_cont.
 
-function selc_auto(){
-  document.getElementById("entrada").value = '';//Borramos el valor que tiene la barra de busqueda.
-  document.getElementById("entrada").value = opc_buscada;//A la barra de busqueda le agregamos el valor que se encuentra adentro de opc_buscada.
-  lista.innerHTML = '';//vaciamos la lista es decir que basiamos el autocompletado.
-  guardar();//Llamamos la funcion guarda.
-}
-
-function guardar(){
-  lista.innerHTML ='';//vaciamos la
-  opc_buscador = document.getElementById('entrada').value.replace(/\s+/g, '').toLocaleLowerCase();//Almacena, borra los espacios y transforma todo el texto en minusculas. 
-  document.getElementById("entrada").value = '';//El valor ingresado en la barra de busqueda se cambia por una cadena vacia.
-  verificar();//Se llama a la funcion verificar.
-}
-
-function verificar(){
-  Restablecer_clasf();//Se reinicia los valores de los arreglos los cuales sirven para la clasificacion del contenido.
-  Restableser_cont();//Se llama la funcion Restablecer_cont.
-  for(i = 0; i < opciones_cont.length; i++){
-    //Se realiza una verificacion para las diferentes opciones que se puedan presentar.
-    if(opc_buscador == ""){
-    }
-    else if(opc_buscador == opciones_cont[i].getAttribute('name').replace(/\s+/g, '').toLocaleLowerCase()){
-      coincidencias.push(opciones_cont[i]);//Se guarda la coincidencias de la opc_buscador con el contenido de la pagina web.
-    }
-    else{
-      diferencias.push(opciones_cont[i]);//Se guardan las diferencias entre las opc_budcador con el cotenido de la pagina web.
-    }
-  }
-  Reorganización();//Se llama la funcion Reorganizacion.
-}
-//#endregion
-
-//#region (Funciones basicas)
-function Reorganización(){
-    //Se ocultan las opciones que fueron diferente al seleccionar una opcion del filtrado o selec.
-    for(var i = 0; i < diferencias.length; i++){
-      diferencias[i].style.display = 'none';
-    }
-  }
-  
-  function Restableser_cont(){
-    //Se restablese el valor display para todo el contenido, el contenido oculto vuelve a la normalidad.
-    for(var i = 0; i < opciones_cont.length; i++){
-      opciones_cont[i].style.display = 'block';
-    }
-  }
-
-  function Restablecer_clasf(){
-    coincidencias.splice(0);//Reiniciamos el valor predeterminado del arreglo concidencias.
-    diferencias.splice(0);//Reiniciamos el valor predeterminado del arreglo diferencias.
-  }
 
         closeBtn.onclick = () => {
             logo.style.display = 'flex';
@@ -87,7 +32,7 @@ function Reorganización(){
         logo.style.display = 'flex';
         title.style.display = 'block';
 
-        // Remove the click listener for the mobile search bar functionality
+      
         searchBtn.onclick = null;
 
         // Bind the search button to the save function for larger screens
